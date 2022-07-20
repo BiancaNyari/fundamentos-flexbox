@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex grow</title>
+    <style>
+        .flex-container {
+            display: flex;
+            border: 2px solid darkmagenta;
+            max-width: 300px;
+            margin-bottom: 20px;
+        }
+
+        .item {
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            border:2px solid black;
+        
+        }
+
+        .color1 {
+            background-color: chartreuse;
+        }
+
+        .color2 {
+            background-color: blueviolet;
+        }
+
+        .color3 {
+            background-color: darkkhaki;
+        }
+
+        .color4 {
+            background-color: pink;
+        }
+
+        .color5 {
+            background-color: coral;
+        }
+
+        .flex-grow-0 {
+            flex-grow: 0;
+        }
+
+        .flex-grow-1 {
+            flex-grow: 1;
+        }
+
+        .flex-grow-2 {
+            flex-grow: 2;
+        }
+
+        .flex-grow-3 {
+            flex-grow: 3;
+        }
+    </style>
+</head>
+<body>
+    <p>flex-grow: 0</p>
+    <div class="flex-container">
+        <div class="item flex-grow-0 color4">A</div>
+        <div class="item flex-grow-0 color4">B</div>
+        <div class="item flex-grow-0 color4">C</div>
+        <div class="item flex-grow-0 color4">D</div>
+    </div>
+
+    <p>flex-grow: 1</p>
+    <div class="flex-container">
+        <div class="item flex-grow-1 color1">A</div>
+        <div class="item flex-grow-1 color1">B</div>
+        <div class="item flex-grow-1 color1">C</div>
+        <div class="item flex-grow-1 color1">D</div>
+    </div>
+
+    <p>flex-grow: 2</p>
+    <div class="flex-container">
+        <div class="item flex-grow-2 color2">A</div>
+        <div class="item flex-grow-2 color2">B</div>
+        <div class="item flex-grow-2 color2">C</div>
+        <div class="item flex-grow-2 color2">D</div>
+    </div>
+    
+    <p>flex-grow: 3</p>
+    <div class="flex-container">
+        <div class="item flex-grow-3 color3">A</div>
+        <div class="item flex-grow-3 color3">B</div>
+        <div class="item flex-grow-3 color3">C</div>
+        <div class="item flex-grow-3 color3">D</div>
+    </div>
+
+    p>flex-grow: alterandos</p>
+    <div class="flex-container">
+        <div class="item flex-grow-0 color5">A</div>
+        <div class="item flex-grow-1 color5">B</div>
+        <div class="item flex-grow-2 color5">C</div>
+        <div class="item flex-grow-3 color5">D</div>
+    </div>
+</body>
+</html>

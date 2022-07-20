@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align content</title>
+</head>
+
+<style>
+    .container {
+        height: 450px;
+        max-width: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        border: 3PX solid darkblue;
+    }
+
+    .item {
+        padding: 0 5px;
+        flex: 1;
+        text-align: center;
+        color: white;
+        margin: 5px;
+        border: 1px solid black;
+    }
+
+    .stretch {
+        align-content: stretch;
+    }
+
+    .center {
+        align-content: center;
+    }
+
+    .flex-start {
+        align-content: flex-start;
+    }
+
+    .flex-end {
+        align-content: flex-end;
+    }
+
+    .space-around {
+        align-content: space-around;
+    }
+
+    .space-between {
+        align-content: space-between;
+    }
+
+    .color1 {
+        background-color: chocolate;
+    }
+
+    .color2 {
+        background-color: blueviolet;
+    }
+
+    .color3 {
+        background-color: goldenrod;
+    }
+
+    .color4 {
+        background-color: yellowgreen;
+    }
+
+    .color5 {
+        background-color: deeppink;
+    }
+
+    .color6 {
+        background-color: deepskyblue;
+    }
+
+    .color7 {
+        background-color: darkcyan;
+    }
+    
+
+
+</style>
+<body>
+    <h3>A raposa e o leão</h3>
+    <p>stretch</p>
+    <div class="container stretch">
+        <div class="item color1">Tinha a Raposa o seu covil bem fechado e estava lá dentro a gemer, porque estava doente; </div>
+        <div class="item color2">chegou à porta um Leão e perguntou-lhe como estava, e que a deixasse entrar, porque a queria lamber, que tinha virtude na língua, e lambendo-a, logo havia de sarar.</div>
+        <div class="item color3">Respondeu a Raposa de dentro:</div>
+        <div class="item color4">— Não posso abrir, nem quero. </div>
+        <div class="item color5">Creio que a tua língua tem virtude; </div>
+        <div class="item color6">porém é tão má vizinhança a dos dentes, que lhe tenho grande medo, e portanto antes quero sofrer com o meu mal.
+        </div>
+        <div class="item color7">Moral da história:<br>A fábula do leão e da raposa nos ensina a sermos precavidos por mais que estejamos em situação de sofrimento.</div>
+    </div>
+
+    <p>center</p>
+    <div class="container center">
+        <div class="item color1">Tinha a Raposa o seu covil bem fechado e estava lá dentro a gemer, porque estava doente; </div>
+        <div class="item color2">chegou à porta um Leão e perguntou-lhe como estava, e que a deixasse entrar, porque a queria lamber, que tinha virtude na língua, e lambendo-a, logo havia de sarar.</div>
+        <div class="item color3">Respondeu a Raposa de dentro:</div>
+        <div class="item color4">— Não posso abrir, nem quero. </div>
+        <div class="item color5">Creio que a tua língua tem virtude; </div>
+        <div class="item color6">porém é tão má vizinhança a dos dentes, que lhe tenho grande medo, e portanto antes quero sofrer com o meu mal.
+        </div>
+        <div class="item color7">Moral da história:<br>A fábula do leão e da raposa nos ensina a sermos precavidos por mais que estejamos em situação de sofrimento.</div>
+    </div>
+
+    <p>flex-start</p>
+    <div class="container flex-start">
+        <div class="item color1">Tinha a Raposa o seu covil bem fechado e estava lá dentro a gemer, porque estava doente; </div>
+        <div class="item color2">chegou à porta um Leão e perguntou-lhe como estava, e que a deixasse entrar, porque a queria lamber, que tinha virtude na língua, e lambendo-a, logo havia de sarar.</div>
+        <div class="item color3">Respondeu a Raposa de dentro:</div>
+        <div class="item color4">— Não posso abrir, nem quero. </div>
+        <div class="item color5">Creio que a tua língua tem virtude; </div>
+        <div class="item color6">porém é tão má vizinhança a dos dentes, que lhe tenho grande medo, e portanto antes quero sofrer com o meu mal.
+        </div>
+        <div class="item color7">Moral da história:<br>A fábula do leão e da raposa nos ensina a sermos precavidos por mais que estejamos em situação de sofrimento.</div>
+    </div>
+
+    <p>flex-end</p>
+    <div class="container flex-end">
+        <div class="item color1">Tinha a Raposa o seu covil bem fechado e estava lá dentro a gemer, porque estava doente; </div>
+        <div class="item color2">chegou à porta um Leão e perguntou-lhe como estava, e que a deixasse entrar, porque a queria lamber, que tinha virtude na língua, e lambendo-a, logo havia de sarar.</div>
+        <div class="item color3">Respondeu a Raposa de dentro:</div>
+        <div class="item color4">— Não posso abrir, nem quero. </div>
+        <div class="item color5">Creio que a tua língua tem virtude; </div>
+        <div class="item color6">porém é tão má vizinhança a dos dentes, que lhe tenho grande medo, e portanto antes quero sofrer com o meu mal.
+        </div>
+        <div class="item color7">Moral da história:<br>A fábula do leão e da raposa nos ensina a sermos precavidos por mais que estejamos em situação de sofrimento.</div>
+    </div>
+
+    <p>space-around</p>
+    <div class="container space-around">
+        <div class="item color1">Tinha a Raposa o seu covil bem fechado e estava lá dentro a gemer, porque estava doente; </div>
+        <div class="item color2">chegou à porta um Leão e perguntou-lhe como estava, e que a deixasse entrar, porque a queria lamber, que tinha virtude na língua, e lambendo-a, logo havia de sarar.</div>
+        <div class="item color3">Respondeu a Raposa de dentro:</div>
+        <div class="item color4">— Não posso abrir, nem quero. </div>
+        <div class="item color5">Creio que a tua língua tem virtude; </div>
+        <div class="item color6">porém é tão má vizinhança a dos dentes, que lhe tenho grande medo, e portanto antes quero sofrer com o meu mal.
+        </div>
+        <div class="item color7">Moral da história:<br>A fábula do leão e da raposa nos ensina a sermos precavidos por mais que estejamos em situação de sofrimento.</div>
+    </div>
+
+    <p>space-between</p>
+    <div class="container space-between">
+        <div class="item color1">Tinha a Raposa o seu covil bem fechado e estava lá dentro a gemer, porque estava doente; </div>
+        <div class="item color2">chegou à porta um Leão e perguntou-lhe como estava, e que a deixasse entrar, porque a queria lamber, que tinha virtude na língua, e lambendo-a, logo havia de sarar.</div>
+        <div class="item color3">Respondeu a Raposa de dentro:</div>
+        <div class="item color4">— Não posso abrir, nem quero. </div>
+        <div class="item color5">Creio que a tua língua tem virtude; </div>
+        <div class="item color6">porém é tão má vizinhança a dos dentes, que lhe tenho grande medo, e portanto antes quero sofrer com o meu mal.
+        </div>
+        <div class="item color7">Moral da história:<br>A fábula do leão e da raposa nos ensina a sermos precavidos por mais que estejamos em situação de sofrimento.</div>
+    </div>
+    
+</body>
+</html>

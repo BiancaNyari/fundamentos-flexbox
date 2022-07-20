@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align self</title>
+    <style>
+        .flex-container {
+            display: flex;
+            max-width: 350px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            
+        }
+
+        .align-container {
+            align-items: center;
+        }
+
+        .item {
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .center {
+            align-self: center;
+        }
+
+        .flex-start {
+            align-self: flex-start;
+        }
+
+        .flex-end {
+            align-self: flex-end;
+        }
+
+        .baseline {
+            align-self: baseline;
+        }
+
+        .stretch {
+            align-self: stretch;
+        }
+
+        .auto {
+            align-self: auto;
+        }
+
+        .color1 {
+            background-color: darkgreen;
+        }
+
+        .color2 {
+            background-color: darkmagenta;
+        }
+
+        .color3 {
+            background-color: darkorange;
+        }
+
+        .color4 {
+            background-color: darkorchid;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>row</h1>
+    <p>align-self: auto</p>
+    <section class="flex-container align-container">
+      <div class="item color1 auto">ABC</div>
+      <div class="item color2 auto">123</div>
+      <div class="item color3 auto">Lorem Impsum is therefore always free from repetition</div>
+      <div class="item color4 auto">Item 4</div>
+    </section>
+
+    <p>align-self: mix</p>
+    <section class="flex-container">
+      <div class="item color1 center">ABC</div>
+      <div class="item color2 flex-start">123</div>
+      <div class="item color3 stretch">Lorem Impsum is therefore always free from repetition</div>
+      <div class="item color4 flex-end">Item 4</div>
+    </section>
+
+    <h1>column</h1>
+    <p>align-self: auto</p>
+    <section class="flex-container align-container column">
+      <div class="item color1 auto">ABC</div>
+      <div class="item color2 auto">123</div>
+      <div class="item color3 auto">Lorem Impsum is therefore always free from repetition</div>
+      <div class="item color4 auto">Item 4</div>
+    </section>
+
+    <p>align-self: mix</p>
+    <section class="flex-container column">
+      <div class="item color1 center">ABC</div>
+      <div class="item color2 flex-start">123</div>
+      <div class="item color3 stretch">Lorem Impsum is therefore always free from repetition</div>
+      <div class="item color4 flex-end">Item 4</div>
+    </section>
+    
+</body>
+</html>

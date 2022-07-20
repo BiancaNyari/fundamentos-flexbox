@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex flow</title>
+    
+    <style>
+        .flex-container {
+            display:flex;
+            border: 1px solid black;
+            max-width: 500px;
+            margin-bottom: 10px;
+            
+        }
+
+        .defaut {
+            flex-flow: row nowrap;
+        }
+
+        .wrap {
+            flex-flow: row wrap;
+        }
+
+        .wrap-reverse {
+            flex-flow: row wrap-reverse;
+        }
+
+        .r-nowrap {
+            flex-flow: row-reverse nowrap;
+        }
+
+        .r-wrap {
+            flex-flow: row-reverse wrap;
+        }
+
+        .rr-wrap {
+            flex-flow: row-reverse wrap-reverse;
+        }
+
+        .item {
+            margin: 5px;
+            color: white;
+            text-align: center;
+            width: 100px;
+            line-height: 50px;
+            height: 50px;
+        }
+
+        .cor1 {
+            background-color: tomato;
+        }
+
+        .cor2 {
+            background-color: cadetblue;
+        }
+
+        .cor3 {
+            background-color: coral;
+        }
+
+        .cor4 {
+            background-color: cyan;
+        }
+
+        .cor5 {
+            background-color: blueviolet;
+        }
+
+        .cor6 {
+            background-color: darkmagenta;
+        }
+
+        .cor7 {
+            background-color: deeppink;
+        }
+    </style>
+</head>
+<body>
+    <h1>defaut row nowrap</h1>
+    <div class="flex-container">
+        <div class="item cor1">1</div>
+        <div class="item cor2">2</div>
+        <div class="item cor3">3</div>
+        <div class="item cor4">4</div>
+        <div class="item cor5">5</div>
+    </div>
+
+    <h1>wrap</h1>
+    <div class="flex-container wrap">
+        <div class="item cor6">1</div>
+        <div class="item cor5">2</div>
+        <div class="item cor4">3</div>
+        <div class="item cor3">4</div>
+        <div class="item cor2">5</div>
+        <div class="item cor1">6</div>
+    </div>
+
+    <h1>wrap-reverse</h1>
+    <div class="flex-container wrap-reverse">
+        <div class="item cor2">1</div>
+        <div class="item cor5">2</div>
+        <div class="item cor4">3</div>
+        <div class="item cor1">4</div>
+        <div class="item cor6">5</div>
+        <div class="item cor2">6</div>
+    </div>
+
+    <h1>row-reverse nowrap</h1>
+    <div class="flex-container r-nowrap">
+        <div class="item cor2">1</div>
+        <div class="item cor5">2</div>
+        <div class="item cor4">3</div>
+        <div class="item cor1">4</div>
+        <div class="item cor6">5</div>
+        <div class="item cor2">6</div>
+        <div class="item cor7">7</div>
+    </div>
+
+    <h1>row-reverse wrap</h1>
+    <div class="flex-container r-wrap">
+        <div class="item cor2">1</div>
+        <div class="item cor5">2</div>
+        <div class="item cor4">3</div>
+        <div class="item cor1">4</div>
+        <div class="item cor6">5</div>
+        <div class="item cor2">6</div>
+        <div class="item cor7">7</div>
+    </div>
+
+    <h1>row-reverse wrap-reverse</h1>
+    <div class="flex-container rr-wrap">
+        <div class="item cor2">1</div>
+        <div class="item cor5">2</div>
+        <div class="item cor4">3</div>
+        <div class="item cor1">4</div>
+        <div class="item cor6">5</div>
+        <div class="item cor2">6</div>
+        <div class="item cor7">7</div>
+    </div>
+    
+</body>
+</html>
